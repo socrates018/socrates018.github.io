@@ -1,4 +1,4 @@
 @echo off
 cd /d "%~dp0"
-start cmd /k "bundle exec jekyll serve"
-start "" "http://127.0.0.1:4000"
+start "" "http://localhost:4000"
+bundle exec jekyll serve --livereload --host 0.0.0.0 --drafts
